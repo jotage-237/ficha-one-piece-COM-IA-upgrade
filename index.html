@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA DO RPG</title>
+    <link rel="stylesheet" href="ficha.css">
+</head>
+
+<body>
+<h1>FICHAS ONE PIECE</h1>
+
+<div class="ficha">
+
+  <label class="linha nome">Nome: <input type="text" name="nome"></label>
+  <label class="linha lvl">Lvl: <input type="number" name="lvl"></label>
+  <label class="linha hp">HP: <input type="text" name="hp"></label>
+  <label class="linha classe">Classe: <input type="text" name="classe"></label>
+  <label class="linha funcao">Função: <input type="text" name="funcao"></label>
+  <label class="linha raca">Raça: <input type="text" name="raca"></label>
+  <label class="linha berry">Berry: <input type="text" name="berry"></label><br>
+
+<div class="bloco-racas">
+  <h3>RAÇA - Clique para escolher:</h3>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca1" id="raca-humano" data-vantagem="N/A" data-desvantagem="N/A">
+    <label for="raca-humano">1-HUMANO</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca2" id="raca-leg" data-vantagem="Estilo de Luta da raça, +3 de dano para todos os ataques do estilo de luta" data-desvantagem="-1 para testes de acrobacia, Não conseguem dançar">
+    <label for="raca-peixe">2-LONG LEGS</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca3" id="raca-arm" data-vantagem="Estilo de luta da raça, +3 de dano para todos os ataques do estilo de luta" data-desvantagem="-1 para testes de pontaria, Consomem um pouco mais de comida">
+    <label for="raca-peixe">3-LONG ARMS</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca4" id="raca-tontatta" data-vantagem="São pequenos, +1 de furtividade, estilo de luta da raça" data-desvantagem="-3 de dano fisico, São muito pequenos e inocentes, -10 de enganação">
+    <label for="raca-peixe">4-TONTATTA</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca5" id="raca-sereiano" data-vantagem="Se movem mais rapido na agua, +3 de dano na agua, 3 de redução de dano" data-desvantagem="Não conseguem sair da agua sem uma bolha revestidas, são sentimentais">
+    <label for="raca-peixe">5-SEREIANO</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca6" id="raca-meio-gigante" data-vantagem="+3 de dano fisico, 3 de redução de dano" data-desvantagem="não cabem em qualquer bote, consomem mais comida, -1 de furtividade">
+    <label for="raca-peixe">6-MEIO GIGANTE</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca7" id="raca-kujas" data-vantagem="+3 de dano fisico, +5 de dano fisico ao usar uma lança" data-desvantagem="São obrigatoriamente mulheres, Sofrem 2 a mais de dano para minks e tritãos">
+    <label for="raca-peixe">7-KUJAS</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca8" id="raca-3olho" data-vantagem="Possuem o Haki da observação (Mas para obter o Avançado é Preciso upar Pericias)" data-desvantagem="-2 para testes de pontaria (sem haki da obs), -2 de dano fisico">
+    <label for="raca-peixe">8-TRES OLHOS</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca9" id="raca-mink" data-vantagem="Estilo de luta da raça, +1 para teste de acrobacias, falam com animais" data-desvantagem="Recebem o dobro de dano De musicos, -1 de todos os testes sociais (Pericias) com humanos">
+    <label for="raca-peixe">9-MINK</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca10" id="raca-tritao" data-vantagem="Estilo de Luta da raça, 4 de redução de dano (na agua reduz 6 de dano e dá + 4 de dano fisico)" data-desvantagem="Começam a campanha com uma Divida de 30.000 berry, sofrem preconceito de humanos, -1 de pontaria fora d'água">
+    <label for="raca-peixe">10-TRITÃO</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca11" id="raca-skypean" data-vantagem="Não Sofrem dano de queda, +2 para todas as curas que RECEBEM, +1 para testes de acrobacias" data-desvantagem="Sofrem preconceito, tem desvantagem de acerto fora do Céu(-1 para testes de Pontaria), sofrem +2 de dano de minks e tritãos">
+    <label for="raca-peixe">11-SKYPEAN</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca12" id="raca-ciborgue" data-vantagem="Estilo de Luta da raça, Redução de dano 3, +2 de dano fisico, (Refrigerante - Pode tomar 1 vez por sessao, ganhando +1 em todas as pericias, +2 de Dano fisico e 2 de redução de dano)" data-desvantagem="Quando molhados sofrem 2x o dano (Refrigerante - toda vez que toma o Refrigerante, perde 5 de hp maximo)">
+    <label for="raca-peixe">12-CIBORGUE</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca13" id="raca-gigante" data-vantagem="7 de redução de dano, +7 de dano fisico" data-desvantagem="Precisam de navios maiores para suporta-los, precisam de roupas maiores, e consomem o dobro de comida, -3 de furtividade">
+    <label for="raca-peixe">13-GIGANTE</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca14" id="raca-oni" data-vantagem="5 de redução de dano, +3 de dano fisico (Lvl 15 - Despertar da forma: +3 de dano para os hakis, +4 de dano fisico, +6 de dano para akuma no mi)" data-desvantagem="Vive sendo perseguido pela marinha/governo mundial, por isso andam sempre camuflados">
+    <label for="raca-peixe">14-ONI</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca15" id="raca-lunariano" data-vantagem="+2 de dano fisico, não sofrem queimaduras, Reduz 6 de dano" data-desvantagem="São odiados por má fama, mal vistos e despresados, -2 para todos os testes sociais (Pericias) ">
+    <label for="raca-peixe">15-LUNARIANO</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca16" id="raca-bucaneiro" data-vantagem="+25 em vontade(Pericia), +4 de dano fisico, 7 de redução de dano, +1 intimidação" data-desvantagem="Background pesado e triste (obrigatorio) -3 de furtividade">
+    <label for="raca-peixe">16-BUCANEIRO</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca17" id="raca-gigante-ancestral" data-vantagem="+3 de intimidação, +8 de dano fisico, 8 de redução de dano, +25 em fortitude (Pericia)" data-desvantagem="-10 de furtividade, ocupam navios gigantes, consomem 4x mais comida">
+    <label for="raca-peixe">17-GIGANTE ANCESTRAL</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca18" id="raca-draga-celestial" data-vantagem="Começam a campanha com 500,000 berry, 3 roll para haki do rei, +2 de intimidação, possibilidade de 1 buster call (almirante aleatorio) por campanha" data-desvantagem="Todas as Raças tem medo e odeiam dragões celestiais, por isso são perseguidos por revolucionarios e caçadores de recompensa">
+    <label for="raca-peixe">18-DRAGÃO CELESTIAL</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca19" id="raca-super-huamno" data-vantagem="Estilo de luta da raça, 5 de redução de dano, +5 de dano fisico, +15 de dano no haki do armamento, +1 em todas as pericias" data-desvantagem="São raros, por isso sao muito procurados por ciêntistas de Bandos Renomados e Poderosos">
+    <label for="raca-peixe">19-SUPER-HUMANO</label>
+  </div>
+
+  <div class="raca-opcao">
+    <input type="radio" name="raca20" id="raca-cla-d" data-vantagem="Haki do rei garantido, +50 de vontade (Pericias) e +3 de dano para os hakis(+1 de esquiva pro haki da observação)" data-desvantagem="Procurados e perseguidos SEMPRE pela marinha e governo mundial, o Clã.D, carrega nome e historia por isso -1 em todos os testes sociais (Pericias)">
+    <label for="raca-peixe">20-CLÃ.D</label>
+  </div>
+
+  <div id="info-raca-escolhida">
+    <strong id="nome-raca"></strong><br>
+    <span style="color:green">✔ VANTAGEM: <span id="texto-vantagem"></span></span><br>
+    <span style="color:red">✖ DESVANTAGEM: <span id="texto-desvantagem"></span></span>
+  </div>
+</div>
+
+  <label class="azul"> FUNÇÃO 1:</label>
+
+  <label class="linha linha39"> <input type="text" name="linha39"></label>
+  <label class="linha linha38"> <input type="text" name="linha38"></label>
+  <label class="linha linha37"> <input type="text" name="linha37"></label>
+
+  <label class="azul"> FUNÇÃO 2:</label>
+
+  <label class="linha linha40"> <input type="text" name="linha40"></label>
+  <label class="linha linha41"> <input type="text" name="linha41"></label>
+  <label class="linha linha42"> <input type="text" name="linha42"></label>
+  <p></p>
+
+  <label class="linha arma">Arma: <input type="text" name="arma"></label><br>
+
+  <label class="linha item">Itens: <input type="text" name="item"></label>
+  <label class="linha linha66"> <input type="text" name="linha66"></label>
+  <label class="linha linha77"> <input type="text" name="linha77"></label>
+  <p></p>
+
+  <label class="pericia"> Pericias(25): </label>
+
+<div class="pericia">
+  <input type="checkbox" data-desc="Estilo de luta Ninpo, +2 para testes de artes.">
+  <label>ARTES</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="Pulo duplo, +2 para testes de acrobacias.">
+  <label>ACROBACIAS</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="Pode falar com animais.">
+  <label>ADESTRAMENTO</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+1 para testes de enganação.">
+  <label>ENGANAÇÃO</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+1 para testes de acerto a distancia.">
+  <label>PONTARIA</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+1 para testes de esquiva.">
+  <label>REFLEXO</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+1 para testes de percepção.">
+  <label>PERCEPÇÃO</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+2 para testes de furtividade.">
+  <label>FURTIVIDADE</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+3 de dano para combate corpo a corpo, +1 para testes de acerto corpo a corpo.">
+  <label>LUTA</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="Reduz todo dano sofrido em 1.">
+  <label>FORTITUDE</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+1d4 para os testes de iniciativa.">
+  <label>INICIATIVA</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+1 para testes de intuição.">
+  <label>INTUIÇÃO</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+1 para testes de intimidação.">
+  <label>INTIMIDAÇÃO</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+3 para testes de historia.">
+  <label>(ARQUEOLOGO) HISTORIA </label>
+  <span class="desc-pericia"></span>
+</div>
+
+<p> </p>
+
+<label class="pericia"> Pericias(50): </label>
+
+
+<div class="pericia">
+  <input type="checkbox" data-desc="+5 de dano para todos os ataques do Ninpo.">
+  <label>ARTES</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="gueppo, +3 para testes de acrobacias.">
+  <label>ACROBACIAS</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="Girando um teste 1d20 (18,19,20) pode recrutar animais para ser seu mascote .">
+  <label>ADESTRAMENTO</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+3 para testes de enganação.">
+  <label>ENGANAÇÃO</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+3 para testes de acerto a distancia.">
+  <label>PONTARIA</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+3 para testes de esquiva.">
+  <label>REFLEXO</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+3 para testes de percepção.">
+  <label>PERCEPÇÃO</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+3 para testes de furtividade.">
+  <label>FURTIVIDADE</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+6 de dano para combate corpo a corpo, +2 para testes de acerto corpo a corpo.">
+  <label>LUTA</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="Reduz todo dano sofrido em 4.">
+  <label>FORTITUDE</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+2 no dado de 1d4 para os testes de iniciativa.">
+  <label>INICIATIVA</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+3 para testes de intuição.">
+  <label>INTUIÇÃO</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+3 para testes de intimidação.">
+  <label>INTIMIDAÇÃO</label>
+  <span class="desc-pericia"></span>
+</div>
+<div class="pericia">
+  <input type="checkbox" data-desc="+4 para testes de historia.">
+  <label>(ARQUEOLOGO) HISTORIA </label>
+  <span class="desc-pericia"></span>
+</div>
+
+<p></p>
+
+<label> TODOS OS TESTES/ATRIBUTOS DE PERICIAS 50 JA FORAM SOMADOS COM OS DE 25 </label>
+
+<p></p>
+
+  <label class="VANTAGEM" name="VANTAGEM"> VANTAGENS DE COMBATE(ex: redução de dano, dano fisico a mais...): </label>
+  <label class="linha linha5"> <input type="text" name="linha5"></label>
+  <label class="linha linha6"> <input type="text" name="linha6"></label>
+  <label class="linha linha7"> <input type="text" name="linha7"></label>
+
+  <label class="DESVANTAGEM" name="DESVANTAGEM"> DESVANTAGENS DE COMBATE: </label>
+  <label class="linha linha8"> <input type="text" name="linha8"></label>
+  <label class="linha linha9"> <input type="text" name="linha9"></label>
+  <label class="linha linha10"> <input type="text" name="linha10"></label>
+
+
+</div>
+
+<script src="fichas.js"> </script>
+
+</body>
+</html>
